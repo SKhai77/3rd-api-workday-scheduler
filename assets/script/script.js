@@ -1,4 +1,5 @@
 var dayLabel = $("#currentDay")
+var saveBtn = $(".saveBtn")
 
 $(function () {
   dayLabel.text(dayjs().format('ddd MMMM D, YYYY'))
@@ -16,6 +17,15 @@ $(function () {
     }
   })
 
-  
+  saveBtn.on("click", function () {
+    var description = $(this).siblings(".description").val().replace(hour)
+    var hour = $(this).parent().attr("id")
+
+    localStorage.setItem(hour, JSON.stringify(description))
+  })
+
+  for (var i = 9; i <= 17; i++) {
+    $(`#${i} textarea`).val(JSON.parse(localStorage.getItem(`${i}`)))
+  }
 
 });
