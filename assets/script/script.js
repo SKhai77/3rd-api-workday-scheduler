@@ -2,10 +2,7 @@
 var dayLabel = $("#currentDay");
 var saveBtn = $(".saveBtn");
 
-$(function displayTime() {
-  // date and time format using dayjs
-  dayLabel.text(dayjs().format('ddd, MMMM DD, YYYY [at] hh:mm:ss a'))
-
+$(function () {
   // local variable declations
   var currentHour = dayjs().hour();
   var timeBlock = $(".time-block");
@@ -32,11 +29,15 @@ $(function displayTime() {
     localStorage.setItem(hour, JSON.stringify(description))
   })
 
-  // this for loop makes sure that the above event to apply to all of the time blocks from 9am - 5pm
+  // this for loop makes sure that the above event applies to all of the time blocks from 9am - 5pm
   for (var i = 9; i <= 17; i++) {
     $(`#${i} textarea`).val(JSON.parse(localStorage.getItem(`${i}`)))
   }
-
+ 
+  // date and time format using dayjs to display in the header of the page
+  dayLabel.text(dayjs().format('ddd, MMMM DD, YYYY [at] hh:mm a'))
+  
 });
+
 
 
