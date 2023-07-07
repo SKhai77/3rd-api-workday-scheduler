@@ -18,7 +18,7 @@ The purpose of this project is to create a simple calendar application that allo
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript/ jQuery
 
 
 ## Installation
@@ -31,13 +31,13 @@ The purpose of this project is to create a simple calendar application that allo
 
 To use the application,
 - Visit the website at (https://skhai77.github.io/work-day-scheduler)
-- Then, you will see the current day is displayed at the top of the calendar
+- You will see the current day is displayed at the top of the calendar
 - Then, you will be presented with timeblocks for standard business hours of 9am&ndash;5pm
 - When you view the timeblocks for that day
 - You will see that each timeblock is color coded to indicate whether it is in the past, present, or future
-- Then you can enter an event by clicking into a timeblock and save it
-- Then, the text for that event is saved in local storage
-- When you refresh the page the saved events persist/ will stay remain
+- You can enter an event by clicking into a timeblock and saving it
+- The text for that event is saved in local storage
+- If you refresh the page the saved events will remain
 
 Preview the homepage:
 ![Code Quiz Screenshot](./assets/screenshot/work-day-scheduler.png)
