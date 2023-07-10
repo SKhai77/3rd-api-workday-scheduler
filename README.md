@@ -40,6 +40,6 @@ To use the application,
 - If you refresh the page the saved events will remain
 
 Preview the homepage:
-![Code Quiz Screenshot](./assets/screenshot/work-day-scheduler.png)
+![Work Day Scheduler Screenshot](./assets/screenshot/work-day-scheduler.png)
 
 
